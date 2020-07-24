@@ -77,18 +77,20 @@ password=password
 ### Feature
 As we have used cucumber we can write our test in Gherkin language which plain english language. Test can be written in feature file and it can be stored in [features](https://github.com/vinaygupta2050/iceyeApiTestFramework/tree/master/src/test/java/com/iceye/test/features) directory. Below is the sample api test written in gherkin language
 ```
-  Scenario: Get all close approach data for asteroid with valid query parameters
-    Given I want to execute service "/cad.api"
-    When I add query parameter key as "des" and value as "433"
-    And I add query parameter key as "date-min" and value as "1900-01-01"
-    And I add query parameter key as "date-max" and value as "2100-01-01"
-    And I add query parameter key as "dist-max" and value as "0.2"
-    And I submit the GET request
-    Then I validate that response status code is 200
-    And I validate response with json schema "cdaJsonSchema.json"
-    And I validate that response contains total 5 records
-    And I validate that response contains data with timestamp "1931-Jan-30 04:07"
-    And I validate that response data with timestamp "1931-Jan-30 04:07" is present at position 0
+  Scenario: Verify whether customer is able to purchase deals for different insurance products as per his choice
+    Given I am on the landing page
+    When I click on Angebote tab
+    And I click on Privathaftpflicht
+    When I click on Weiter
+    And  "Wen möchtest du versichern?" question is displayed
+    Then I should select answer as "Mich alleine"
+    When "Trifft einer der aufgeführten Fälle auf dich zu?" question is displayed
+    Then I should select answer as "Ich bin im öffentlichen Dienst beschäftigt"
+    When "Möchtest du bei einem Schadensfall einen Teil selbst bezahlen?" question is displayed
+    Then I should select answer as "Im Falle eines Schadens soll meine Geldbörse nicht belastet werden"
+    When "Hast du noch weitere Informationen oder Anmerkungen für uns?" question is displayed
+    Then I should be able to comment as "Car Bonet Damaged"
+    And  I click on Angebot anfordern button
 
 ```
 ### Step definition
