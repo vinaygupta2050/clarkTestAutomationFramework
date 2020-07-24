@@ -1,0 +1,670 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-24T14:11:55.985Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5338060370,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify whether customer is able to purchase deals for different insurance products as per his choice",
+        "description": "",
+        "id": "insurancepurchasedeals;verify-whether-customer-is-able-to-purchase-deals-for-different-insurance-products-as-per-his-choice",
+        "after": [
+          {
+            "result": {
+              "duration": 216735450,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.endTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35798928534,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the landing page",
+            "match": {
+              "location": "DealsPurchaseSteps.i_am_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 626748676,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Angebote tab",
+            "match": {
+              "location": "DealsPurchaseSteps.i_click_on_Angebote_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3214599035,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on Privathaftpflicht",
+            "match": {
+              "location": "DealsPurchaseSteps.i_click_on_Privathaftpflicht()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 649061628,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Weiter",
+            "match": {
+              "location": "DealsPurchaseSteps.i_click_on_Weiter()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 86952805,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"Wen möchtest du versichern?\" question is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Wen möchtest du versichern?\"",
+                  "offset": 0
+                }
+              ],
+              "location": "DealsPurchaseSteps.question_is_displayed(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 178648423,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should select answer as \"Mich alleine\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mich alleine\"",
+                  "offset": 26
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_should_select_answer_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6446978158,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "\"Trifft einer der aufgeführten Fälle auf dich zu?\" question is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Trifft einer der aufgeführten Fälle auf dich zu?\"",
+                  "offset": 0
+                }
+              ],
+              "location": "DealsPurchaseSteps.question_is_displayed(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52915206,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should select answer as \"Ich bin im öffentlichen Dienst beschäftigt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ich bin im öffentlichen Dienst beschäftigt\"",
+                  "offset": 26
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_should_select_answer_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 344362660,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "\"Möchtest du bei einem Schadensfall einen Teil selbst bezahlen?\" question is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Möchtest du bei einem Schadensfall einen Teil selbst bezahlen?\"",
+                  "offset": 0
+                }
+              ],
+              "location": "DealsPurchaseSteps.question_is_displayed(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58588399,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should select answer as \"Im Falle eines Schadens soll meine Geldbörse nicht belastet werden\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Im Falle eines Schadens soll meine Geldbörse nicht belastet werden\"",
+                  "offset": 26
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_should_select_answer_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 303979938,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "\"Hast du noch weitere Informationen oder Anmerkungen für uns?\" question is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hast du noch weitere Informationen oder Anmerkungen für uns?\"",
+                  "offset": 0
+                }
+              ],
+              "location": "DealsPurchaseSteps.question_is_displayed(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 221023884,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should be able to comment as \"Car Bonet Damaged\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Car Bonet Damaged\"",
+                  "offset": 31
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_should_be_able_to_comment_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 66987286,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on Angebot anfordern button",
+            "match": {
+              "location": "DealsPurchaseSteps.i_click_on_Angebot_anfordern_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2786091890,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "\"Dein Angebot ist da!\" message should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dein Angebot ist da!\"",
+                  "offset": 0
+                }
+              ],
+              "location": "DealsPurchaseSteps.message_should_be_displayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 90953654,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I click on Zum Angebot button",
+            "match": {
+              "location": "DealsPurchaseSteps.i_click_on_Zum_Angebot_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2151198364,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should be navigate to Verträge screen where I verify the message on the screen",
+            "match": {
+              "location": "DealsPurchaseSteps.i_should_be_navigate_to_Verträge_screen_where_I_verify_the_message_on_the_screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 199312734,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I click on Jetzt abschließen button of Empfehlung",
+            "match": {
+              "location": "DealsPurchaseSteps.i_click_on_Jetzt_abschließen_button_of_Empfehlung()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2717400847,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Deinen Fortschritt sichern screen is loaded",
+            "match": {
+              "location": "DealsPurchaseSteps.Deinen_Fortschritt_sichern_screen_is_loaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 161415247,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I enter random email",
+            "match": {
+              "location": "DealsPurchaseSteps.i_enter_random_email()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 217793576,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I enter password",
+            "match": {
+              "location": "DealsPurchaseSteps.i_enter_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76177888,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I click on Jetzt registrieren",
+            "match": {
+              "location": "DealsPurchaseSteps.i_click_on_Jetzt_registrieren()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1658671997,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Persönliche Angaben screen should be displayed",
+            "match": {
+              "location": "DealsPurchaseSteps.persönliche_Angaben_screen_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 162826368,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I select Anrede as \"Herr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Herr\"",
+                  "offset": 19
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_select_Anrede_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144016413,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I enter Vorname as \"Testfname\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testfname\"",
+                  "offset": 19
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_enter_Vorname_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 107440448,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I enter Nachname as \"Testlname\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testlname\"",
+                  "offset": 20
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_enter_Nachname_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148298618,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter Geburtsdatum as \"24.09.1992\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"24.09.1992\"",
+                  "offset": 24
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_enter_Geburtsdatum_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130475645,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I enter Straße as \"Savignyplatz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Savignyplatz\"",
+                  "offset": 18
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_enter_Straße_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72453619,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I enter Haus as \"101\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"101\"",
+                  "offset": 16
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_enter_Haus_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87226624,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I enter PLZ as \"60306\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"60306\"",
+                  "offset": 15
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_enter_PLZ_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93204395,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I enter Ort as \"Berlin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Berlin\"",
+                  "offset": 15
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_enter_Ort_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153788196,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I enter Telefonnummer as \"015229320777\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"015229320777\"",
+                  "offset": 25
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_enter_Telefonnummer_as_(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73405178,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I click on Weiter button",
+            "match": {
+              "location": "DealsPurchaseSteps.i_click_on_Weiter_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1763094392,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I should be navigated to Zahlungsdaten screen",
+            "match": {
+              "location": "DealsPurchaseSteps.i_should_be_navigated_to_Zahlungsdaten_screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 271020350,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I enter valid IBAN number as \"DE55500105174529223988\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DE55500105174529223988\"",
+                  "offset": 29
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_enter_valid_IBAN_number_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36608043,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I select check box for Lastschriftmandat",
+            "match": {
+              "location": "DealsPurchaseSteps.i_select_check_box_for_Lastschriftmandat()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68524613,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I click on Tarif bestellen",
+            "match": {
+              "location": "DealsPurchaseSteps.i_click_on_Tarif_bestellen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 490794709,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should be navigate to Angaben-Übersicht to verify my details",
+            "match": {
+              "location": "DealsPurchaseSteps.i_should_be_navigate_to_Angaben_Übersicht_to_verify_my_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 170893791,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I click on Jetzt verbindlinch kaufen button",
+            "match": {
+              "location": "DealsPurchaseSteps.i_click_on_Jetzt_verbindlinch_kaufen_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2921454456,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I should be take to Bestellung abgeschlossen screen",
+            "match": {
+              "location": "DealsPurchaseSteps.i_should_be_take_to_Bestellung_abgeschlossen_screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2171931155,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I click on Zurück zur Übersicht button",
+            "match": {
+              "location": "DealsPurchaseSteps.i_click_on_Zurück_zur_Übersicht_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54373603,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I close popup",
+            "match": {
+              "location": "DealsPurchaseSteps.i_close_popup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37529320,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I should be landed to Verträge page with name present as \"Testfname\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Testfname\"",
+                  "offset": 57
+                }
+              ],
+              "location": "DealsPurchaseSteps.i_should_be_landed_to_Verträge_page_with_name_present_as(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "InsurancePurchaseDeals",
+    "description": "  Under this modules Clark provide different deals on wide variety of insurance product where customer can purchase one as per needs.",
+    "id": "insurancepurchasedeals",
+    "keyword": "Feature",
+    "uri": "file:/Users/in-vinaykumar.gupta/Downloads/Projects/clarkTestAutomationFramework/src/test/java/com/clark/features/DealsPurchaseFlow.feature",
+    "tags": []
+  }
+]

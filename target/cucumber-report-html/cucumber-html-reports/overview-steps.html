@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>clarkTestAutomationFramework</td>
+                          <td>1</td>
+                        <td>24 Jul 2020, 19:43</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.Deinen_Fortschritt_sichern_screen_is_loaded()</td>
+              <td>1</td>
+              <td class="duration" data-value="2717400847">2s 717ms</td>
+              <td class="duration" data-value="2717400847">2s 717ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_am_on_the_landing_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="35798928534">35s 798ms</td>
+              <td class="duration" data-value="35798928534">35s 798ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_click_on_Angebot_anfordern_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="66987286">066ms</td>
+              <td class="duration" data-value="66987286">066ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_click_on_Angebote_tab()</td>
+              <td>1</td>
+              <td class="duration" data-value="626748676">626ms</td>
+              <td class="duration" data-value="626748676">626ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_click_on_Jetzt_abschließen_button_of_Empfehlung()</td>
+              <td>1</td>
+              <td class="duration" data-value="199312734">199ms</td>
+              <td class="duration" data-value="199312734">199ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_click_on_Jetzt_registrieren()</td>
+              <td>1</td>
+              <td class="duration" data-value="76177888">076ms</td>
+              <td class="duration" data-value="76177888">076ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_click_on_Jetzt_verbindlinch_kaufen_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="170893791">170ms</td>
+              <td class="duration" data-value="170893791">170ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_click_on_Privathaftpflicht()</td>
+              <td>1</td>
+              <td class="duration" data-value="3214599035">3s 214ms</td>
+              <td class="duration" data-value="3214599035">3s 214ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_click_on_Tarif_bestellen()</td>
+              <td>1</td>
+              <td class="duration" data-value="68524613">068ms</td>
+              <td class="duration" data-value="68524613">068ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_click_on_Weiter()</td>
+              <td>1</td>
+              <td class="duration" data-value="649061628">649ms</td>
+              <td class="duration" data-value="649061628">649ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_click_on_Weiter_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="73405178">073ms</td>
+              <td class="duration" data-value="73405178">073ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_click_on_Zum_Angebot_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="90953654">090ms</td>
+              <td class="duration" data-value="90953654">090ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_click_on_Zurück_zur_Übersicht_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="2171931155">2s 171ms</td>
+              <td class="duration" data-value="2171931155">2s 171ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_close_popup()</td>
+              <td>1</td>
+              <td class="duration" data-value="54373603">054ms</td>
+              <td class="duration" data-value="54373603">054ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_enter_Geburtsdatum_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="148298618">148ms</td>
+              <td class="duration" data-value="148298618">148ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_enter_Haus_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="72453619">072ms</td>
+              <td class="duration" data-value="72453619">072ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_enter_Nachname_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="107440448">107ms</td>
+              <td class="duration" data-value="107440448">107ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_enter_Ort_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="93204395">093ms</td>
+              <td class="duration" data-value="93204395">093ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_enter_PLZ_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="87226624">087ms</td>
+              <td class="duration" data-value="87226624">087ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_enter_Straße_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="130475645">130ms</td>
+              <td class="duration" data-value="130475645">130ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_enter_Telefonnummer_as_(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="153788196">153ms</td>
+              <td class="duration" data-value="153788196">153ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_enter_Vorname_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="144016413">144ms</td>
+              <td class="duration" data-value="144016413">144ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_enter_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="217793576">217ms</td>
+              <td class="duration" data-value="217793576">217ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_enter_random_email()</td>
+              <td>1</td>
+              <td class="duration" data-value="161415247">161ms</td>
+              <td class="duration" data-value="161415247">161ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_enter_valid_IBAN_number_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="271020350">271ms</td>
+              <td class="duration" data-value="271020350">271ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_select_Anrede_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="162826368">162ms</td>
+              <td class="duration" data-value="162826368">162ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_select_check_box_for_Lastschriftmandat()</td>
+              <td>1</td>
+              <td class="duration" data-value="36608043">036ms</td>
+              <td class="duration" data-value="36608043">036ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_should_be_able_to_comment_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="221023884">221ms</td>
+              <td class="duration" data-value="221023884">221ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_should_be_landed_to_Verträge_page_with_name_present_as(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="37529320">037ms</td>
+              <td class="duration" data-value="37529320">037ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_should_be_navigate_to_Angaben_Übersicht_to_verify_my_details()</td>
+              <td>1</td>
+              <td class="duration" data-value="490794709">490ms</td>
+              <td class="duration" data-value="490794709">490ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_should_be_navigate_to_Verträge_screen_where_I_verify_the_message_on_the_screen()</td>
+              <td>1</td>
+              <td class="duration" data-value="2151198364">2s 151ms</td>
+              <td class="duration" data-value="2151198364">2s 151ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_should_be_navigated_to_Zahlungsdaten_screen()</td>
+              <td>1</td>
+              <td class="duration" data-value="1763094392">1s 763ms</td>
+              <td class="duration" data-value="1763094392">1s 763ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_should_be_take_to_Bestellung_abgeschlossen_screen()</td>
+              <td>1</td>
+              <td class="duration" data-value="2921454456">2s 921ms</td>
+              <td class="duration" data-value="2921454456">2s 921ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.i_should_select_answer_as(String)</td>
+              <td>3</td>
+              <td class="duration" data-value="290152028">290ms</td>
+              <td class="duration" data-value="96717342">096ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.message_should_be_displayed(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2786091890">2s 786ms</td>
+              <td class="duration" data-value="2786091890">2s 786ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.persönliche_Angaben_screen_should_be_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="1658671997">1s 658ms</td>
+              <td class="duration" data-value="1658671997">1s 658ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DealsPurchaseSteps.question_is_displayed(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="7182273561">7s 182ms</td>
+              <td class="duration" data-value="1795568390">1s 795ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.endTest(Scenario)</td>
+              <td>1</td>
+              <td class="duration" data-value="216735450">216ms</td>
+              <td class="duration" data-value="216735450">216ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.initializeTest()</td>
+              <td>1</td>
+              <td class="duration" data-value="5338060370">5s 338ms</td>
+              <td class="duration" data-value="5338060370">5s 338ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>39</td>
+            <td>44</td>
+            <td class="duration">1m 12s 822ms</td>
+            <td class="duration">1s 655ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
