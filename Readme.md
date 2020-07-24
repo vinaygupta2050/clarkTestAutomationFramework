@@ -63,7 +63,7 @@ These two files should be placed in below directories
 * [Environment config](https://github.com/vinaygupta2050/clarkTestAutomationFramework/tree/master/src/main/resources)
 
 ### Target Environments
-The framework is designed so that multiple environments along with their required vairables can be supported and multiple services for each environment can be defined with in folder [Environment config](https://github.com/vinaygupta2050/ApiTestAutomationFramework/tree/master/src/main/resources) 
+The framework is designed so that multiple environments along with their required vairables can be supported and multiple services for each environment can be defined with in folder [Environment config](https://github.com/vinaygupta2050/clarkTestAutomationFramework/tree/master/src/main/resources) 
 ```
 serverUrl=https://staging.clark.de/de/app/contracts?cv=2
 userName=admin
@@ -92,7 +92,7 @@ As we have used cucumber we can write our test in Gherkin language which plain e
 
 ```
 ### Step definition
-We can write step definition with respect to the feature in [steps](https://github.com/vinaygupta2050/iceyeApiTestFramework/tree/master/src/test/java/com/iceye/test/steps) directory.
+We can write step definition with respect to the feature in [steps](https://github.com/vinaygupta2050/clarkTestAutomationFramework/tree/master/src/test/java/com/clark/steps) directory.
 
 ## Running your Test
 When you are ready to run your tests from the command line, below are a few examples of run commands (standard maven command line syntax):
